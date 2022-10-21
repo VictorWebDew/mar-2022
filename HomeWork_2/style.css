@@ -1,0 +1,100 @@
+html. body {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*height: 100vh;*/
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+h2, p, button {
+    text-align: center;
+text-transform: capitalize;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    /*align-content: center;*/
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+.container_Sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /*position: relative;*/
+    border: 1px solid gray;
+    width: 27%;
+    height: 50vh;
+    padding: 0 1% 30px;
+
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+    padding: 0 80px;
+}
+
+.container_Sub .image_Box {
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*left: 25%;*/
+
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    border: 1px solid black;
+    /*padding: 30px;*/
+    /*background-color: #fff;*/
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.image_Box .img {
+    position: absolute;
+    /*top:50%;*/
+    /*left: 50%;*/
+
+
+
+
+    /*top: 50%;*/
+    /*left: 25%;*/
+
+}
+
+
+
+
+
+h2 {
+    letter-spacing: 1px;
+    color: black;
+}
+
+p {
+    color: gray;
+    word-wrap: break-word;
+}
+
+.container button {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 0px;
+    border: 1px solid black;
+
+
+}
