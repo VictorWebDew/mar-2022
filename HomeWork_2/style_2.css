@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.nav {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav, .container, .footer {
+    border: 1px solid black;
+}
+
+.nav .btn {
+    display: flex;
+    align-self: center;
+    background-color: midnightblue;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.burger_box {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    /*border: 1px solid black;*/
+}
+
+.burger_box .search {
+    position: relative;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(114, 114, 206, 0.89);
+    border-radius: 50%;
+}
+
+.burger_box .search::after {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: rgba(114, 114, 206, 0.89);
+    transform: rotate(40deg);
+
+}
+
+.nav .nav_nav {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+.nav_nav .burger, .nav_nav .burger::before, .nav_nav .burger::after {
+    border-radius: 10px;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 5px;
+
+}
+
+.nav_nav .burger {
+    background-color: red;
+    position: relative;
+}
+
+.nav_nav .burger::before {
+    position: absolute;
+    top: 8px;
+    background-color: blueviolet;
+}
+
+.nav_nav .burger:after {
+    position: absolute;
+    background-color: navy;
+    top: 16px;
+}
+
+.main {
+    height: 60vh;
+    background-color: midnightblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    /*position: relative;*/
+    height: 25vh;
+}
+
+.footer div {
+    /*position: absolute;*/
+    margin: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 15px;
+}
