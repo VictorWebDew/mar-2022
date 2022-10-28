@@ -6,6 +6,8 @@ html, body {
 }
 
 div {
+    display: grid;
+    align-content: center;
     background-color: dimgray;
     border-radius: 5px;
     text-align: center;
