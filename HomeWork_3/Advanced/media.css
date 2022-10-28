@@ -4,6 +4,11 @@
     }
 
     .container {
+
+        /*.nav {*/
+        /*    grid-column: 1/-1;*/
+        /*}*/
+
         grid-template-areas:
             "logo Header Header Header"
             "Nav Nav Nav Nav"
