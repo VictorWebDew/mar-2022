@@ -3,21 +3,56 @@
         background-color: blue;
     }
 
-    .container {
+    @media screen and (max-width: 768px) {
 
-        /*.nav {*/
-        /*    grid-column: 1/-1;*/
-        /*}*/
+        .Logo {
+            grid-column: 1;
+        }
 
-        grid-template-areas:
-            "logo Header Header Header"
-            "Nav Nav Nav Nav"
-            "BathSectionIntro BathSectionIntro BathSectionIntro Ad"
-            "TypesOfBaths TypesOfBaths TypesOfBaths TypesOfBaths"
-            "TypesOfBaths TypesOfBaths TypesOfBaths TypesOfBaths"
-            "StoreLocator TypesOfBaths TypesOfBaths RelatedProducts"
-            "Tools TypesOfBaths TypesOfBaths RelatedProducts"
-            "Footer Footer Footer Footer";
+        .Header {
+            grid-column: 2/-1;
+        }
+
+        .Nav {
+            grid-column: 1/ -1;
+            grid-row: 2;
+            z-index: 1;
+        }
+
+        .BathSectionIntro {
+            grid-column: 1/3;
+            grid-row: 3;
+        }
+
+        .Ad {
+            grid-column: 3/-1;
+            grid-row: 3;
+        }
+
+        .TypesOfBaths {
+            grid-column: 1/-1;
+            grid-row: 4/6;
+        }
+
+        .RelatedProducts {
+            grid-column: 1/-1;
+            grid-row: 6/7;
+        }
+        .StoreLocator {
+            grid-column: 1/3;
+            grid-row: 7/8;
+        }
+
+        .Tools {
+            grid-column: 3/-1;
+            grid-row: 7/8;
+        }
+
+        .Footer {
+            grid-column: 1/-1;
+            grid-row: 8/-1;
+        }
+
     }
 
     
