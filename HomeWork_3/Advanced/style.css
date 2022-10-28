@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+div {
+    background-color: dimgray;
+    border-radius: 5px;
+    text-align: center;
+    /*word-wrap: break-word;*/
+    overflow-wrap: break-word;
+    color: antiquewhite;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    grid-template-columns: minmax(50px, 80px) repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "logo Header Header Header"
+        "Nav BathSectionIntro BathSectionIntro Ad"
+        "Nav BathSectionIntro BathSectionIntro Ad"
+        "Nav TypesOfBaths TypesOfBaths RelatedProducts"
+        "Nav TypesOfBaths TypesOfBaths RelatedProducts"
+        "StoreLocator TypesOfBaths TypesOfBaths RelatedProducts"
+        "Tools TypesOfBaths TypesOfBaths RelatedProducts"
+        "Footer Footer Footer Footer";
+}
+
+.Logo {
+    grid-area: logo;
+}
+
+.Header {
+    grid-area: Header;
+}
+
+.Nav {
+    grid-area: Nav;
+}
+
+.BathSectionIntro {
+    grid-area: BathSectionIntro;
+}
+
+.Ad {
+    grid-area: Ad;
+}
+
+.TypesOfBaths {
+    grid-area: TypesOfBaths;
+}
+
+.RelatedProducts {
+    grid-area: RelatedProducts;
+}
+
+.StoreLocator {
+    grid-area: StoreLocator;
+}
+
+.Tools {
+    grid-area: Tools;
+}
+
+.Footer {
+    grid-area: Footer;
+}
+

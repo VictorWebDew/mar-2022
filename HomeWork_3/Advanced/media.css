@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+    div {
+        background-color: blue;
+    }
+
+    .container {
+        grid-template-areas:
+            "logo Header Header Header"
+            "Nav Nav Nav Nav"
+            "BathSectionIntro BathSectionIntro BathSectionIntro Ad"
+            "TypesOfBaths TypesOfBaths TypesOfBaths TypesOfBaths"
+            "TypesOfBaths TypesOfBaths TypesOfBaths TypesOfBaths"
+            "StoreLocator TypesOfBaths TypesOfBaths RelatedProducts"
+            "Tools TypesOfBaths TypesOfBaths RelatedProducts"
+            "Footer Footer Footer Footer";
+    }
+
+    }
+
+
