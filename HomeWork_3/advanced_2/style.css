@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+div {
+    display: grid;
+    align-content: center;
+    background-color: dimgray;
+    border-radius: 5px;
+    text-align: center;
+    /*word-wrap: break-word;*/
+    overflow-wrap: break-word;
+    color: antiquewhite;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    grid-template-columns: minmax(50px, 80px) repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Header {
+    grid-column: 2/-1;
+    grid-row: 1;
+}
+
+.Nav {
+    grid-column: 1;
+    grid-row: 2/5;
+}
+
+.BathSectionIntro {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.Ad {
+    grid-column: 4;
+    grid-row: 2/4;
+}
+
+.TypesOfBaths {
+    grid-column: 2/4;
+    grid-row: 4/8;
+}
+
+.RelatedProducts {
+    grid-column: 4/-1;
+    grid-row: 4/8;
+}
+
+.StoreLocator {
+    grid-column: 1;
+    grid-row: 5/7;
+}
+
+.Tools {
+    grid-column: 1;
+    grid-row: 7/8;
+}
+
+.Footer {
+    grid-column: 1/-1;
+    grid-row: 8;
+}
+
+
+
+
